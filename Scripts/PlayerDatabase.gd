@@ -1,5 +1,7 @@
 extends Node
 
+const PlayerData := preload("res://Data/PlayerData.gd")
+
 var players: Array = []
 
 func _ready():
