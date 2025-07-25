@@ -1,0 +1,50 @@
+[gd_scene format=3]
+
+[ext_resource path="res://Scripts/LogoPicker.gd" type="Script" id=1]
+[ext_resource path="res://Assets/logo_1.png" type="Texture2D" id=2]
+[ext_resource path="res://Assets/logo_2.png" type="Texture2D" id=3]
+[ext_resource path="res://Assets/logo_3.png" type="Texture2D" id=4]
+[ext_resource path="res://Assets/logo_4.png" type="Texture2D" id=5]
+[ext_resource path="res://Assets/logo_5.png" type="Texture2D" id=6]
+[ext_resource path="res://Assets/logo_6.png" type="Texture2D" id=7]
+[ext_resource path="res://Assets/logo_7.png" type="Texture2D" id=8]
+[ext_resource path="res://Assets/logo_8.png" type="Texture2D" id=9]
+
+
+[ext_resource path="res://Scripts/LogoPicker.gd" type="Script" id=1]
+
+[node name="LogoPicker" type="Control"]
+script = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Grid" type="GridContainer" parent="."]
+columns = 4
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 640
+margin_bottom = 480
+
+[node name="Logo1" type="TextureButton" parent="Grid"]
+texture_normal = ExtResource(2)
+
+[node name="Logo2" type="TextureButton" parent="Grid"]
+texture_normal = ExtResource(3)
+
+[node name="Logo3" type="TextureButton" parent="Grid"]
+texture_normal = ExtResource(4)
+
+[node name="Logo4" type="TextureButton" parent="Grid"]
+texture_normal = ExtResource(5)
+
+[node name="Logo5" type="TextureButton" parent="Grid"]
+texture_normal = ExtResource(6)
+
+[node name="Logo6" type="TextureButton" parent="Grid"]
+texture_normal = ExtResource(7)
+
+[node name="Logo7" type="TextureButton" parent="Grid"]
+texture_normal = ExtResource(8)
+
+[node name="Logo8" type="TextureButton" parent="Grid"]
+texture_normal = ExtResource(9)

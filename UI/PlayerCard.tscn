@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[ext_resource path="res://UI/PlayerCard.gd" type="Script" id=1]
+
+[node name="PlayerCard" type="HBoxContainer"]
+script = ExtResource( 1 )
+
+[node name="LabelName" type="Label" parent="."]
+text = "Игрок"
+
+[node name="LabelRole" type="Label" parent="."]
+text = "Роль"
+
+[node name="LabelStats" type="Label" parent="."]
+text = "Навыки"
+
+[node name="LabelState" type="Label" parent="."]
+text = "Состояние"
+
+[node name="ButtonView" type="Button" parent="."]
+text = "Просмотр"

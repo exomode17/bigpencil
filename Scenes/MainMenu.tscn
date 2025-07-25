@@ -1,0 +1,43 @@
+[gd_scene
+
+[ext_resource path="res://Assets/menu_music.ogg" type="AudioStream" id=3] format=3]
+
+[ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/menu_bg.png" type="Texture2D" id=4]
+
+[node name="MainMenu" type="Control"]
+script = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 600
+margin_bottom = 300
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+text = "Dota Manager Tycoon"
+align = 1
+
+[node name="ButtonContinue" type="Button" parent="VBoxContainer"]
+text = "Продолжить"
+
+[node name="ButtonNew" type="Button" parent="VBoxContainer"]
+text = "Новая игра"
+
+[node name="ButtonExit" type="Button" parent="VBoxContainer"]
+text = "Выход"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource(3)
+autoplay = true
+volume_db = -6.0
+
+[node name="BG" type="TextureRect" parent="."]
+texture = ExtResource(4)
+stretch_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+z_index = -1

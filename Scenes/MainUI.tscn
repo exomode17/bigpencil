@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://wlu0rybbn0dp"]
+
+[ext_resource type="Script" path="res://Scripts/MainUI.gd" id="1"]
+
+[node name="MainUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="TopBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="lbl_week" type="Label" parent="MarginContainer/VBoxContainer/TopBar"]
+layout_mode = 2
+text = "📆 Неделя 1"
+
+[node name="lbl_balance" type="Label" parent="MarginContainer/VBoxContainer/TopBar"]
+layout_mode = 2
+text = "💰 $100000"
+
+[node name="lbl_messages" type="Label" parent="MarginContainer/VBoxContainer/TopBar"]
+layout_mode = 2
+text = "💬 Сообщения (3)"
+
+[node name="btn_settings" type="Button" parent="MarginContainer/VBoxContainer/TopBar"]
+layout_mode = 2
+text = "⚙"
+
+[node name="MainContent" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="LeftMenu" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MainContent"]
+layout_mode = 2
+
+[node name="btn_home" type="Button" parent="MarginContainer/VBoxContainer/MainContent/LeftMenu"]
+layout_mode = 2
+text = "🏠 Дом"
+
+[node name="ContentPanel" type="PanelContainer" parent="MarginContainer/VBoxContainer/MainContent"]
+layout_mode = 2
+
+[node name="DynamicContent" type="Control" parent="MarginContainer/VBoxContainer/MainContent/ContentPanel"]
+layout_mode = 2

@@ -1,0 +1,54 @@
+[gd_scene format=3]
+
+[ext_resource path="res://Scripts/Infrastructure.gd" type="Script" id=1]
+
+[node name="Infrastructure" type="Control"]
+script = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 640
+margin_bottom = 480
+
+[node name="base" type="HBoxContainer" parent="VBox"]
+[node name="Label" type="Label" parent="VBox/base"]
+text = "База | Уровень:"
+
+[node name="Level" type="Label" parent="VBox/base"]
+text = "0"
+
+[node name="ButtonUpgrade" type="Button" parent="VBox/base"]
+text = "Улучшить ($1000)"
+
+[node name="bootcamp" type="HBoxContainer" parent="VBox"]
+[node name="Label" type="Label" parent="VBox/bootcamp"]
+text = "Буткемп | Уровень:"
+
+[node name="Level" type="Label" parent="VBox/bootcamp"]
+text = "0"
+
+[node name="ButtonUpgrade" type="Button" parent="VBox/bootcamp"]
+text = "Улучшить ($800)"
+
+[node name="analytics" type="HBoxContainer" parent="VBox"]
+[node name="Label" type="Label" parent="VBox/analytics"]
+text = "Аналитика | Уровень:"
+
+[node name="Level" type="Label" parent="VBox/analytics"]
+text = "0"
+
+[node name="ButtonUpgrade" type="Button" parent="VBox/analytics"]
+text = "Улучшить ($600)"
+
+[node name="pr" type="HBoxContainer" parent="VBox"]
+[node name="Label" type="Label" parent="VBox/pr"]
+text = "PR-отдел | Уровень:"
+
+[node name="Level" type="Label" parent="VBox/pr"]
+text = "0"
+
+[node name="ButtonUpgrade" type="Button" parent="VBox/pr"]
+text = "Улучшить ($500)"

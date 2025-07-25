@@ -1,0 +1,45 @@
+[gd_scene format=3]
+
+[ext_resource path="res://Scripts/TopBar.gd" type="Script" id=1]
+
+[node name="TopBar" type="HBoxContainer"]
+script = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 0.0
+margin_right = 1024.0
+custom_constants/separation = 10
+
+[node name="TeamLogo" type="TextureRect" parent="."]
+stretch_mode = 2
+custom_minimum_size = Vector2(32, 32)
+
+[node name="TeamName" type="Label" parent="."]
+text = "Team"
+custom_colors/font_color = Color(1, 1, 1)
+
+[node name="Spacer" type="Control" parent="."]
+size_flags_horizontal = 3
+
+[node name="BalanceLabel" type="Label" parent="."]
+text = "Баланс:"
+
+[node name="Balance" type="Label" parent="."]
+text = "$0"
+
+[node name="WeekLabel" type="Label" parent="."]
+text = "Неделя:"
+
+[node name="Week" type="Label" parent="."]
+text = "0"
+
+[node name="RatingLabel" type="Label" parent="."]
+text = "Рейтинг:"
+
+[node name="Rating" type="Label" parent="."]
+text = "50"
+
+[node name="FansLabel" type="Label" parent="."]
+text = "Фанаты:"
+
+[node name="Fans" type="Label" parent="."]
+text = "1000"

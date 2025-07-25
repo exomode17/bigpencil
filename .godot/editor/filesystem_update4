@@ -1,0 +1,4 @@
+res://Scenes/MainUI.tscn
+res://Scenes/TeamScreen.tscn
+res://UI/TrainingCard.tscn
+res://Scripts/GameState.gd

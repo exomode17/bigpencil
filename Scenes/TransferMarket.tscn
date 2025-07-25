@@ -1,0 +1,49 @@
+[gd_scene format=3]
+
+[ext_resource path="res://Scripts/TransferMarket.gd" type="Script" id=1]
+
+[node name="TransferMarket" type="Control"]
+script = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 640
+margin_bottom = 480
+
+[node name="Iceberg" type="HBoxContainer" parent="VBox"]
+[node name="LabelName" type="Label" parent="VBox/Iceberg"]
+text = "Iceberg (Mid) | Рейтинг: 78 | З/п: $400"
+
+[node name="ButtonHire" type="Button" parent="VBox/Iceberg"]
+text = "Подписать"
+
+[node name="Zayac" type="HBoxContainer" parent="VBox"]
+[node name="LabelName" type="Label" parent="VBox/Zayac"]
+text = "Zayac (Support) | Рейтинг: 75 | З/п: $350"
+
+[node name="ButtonHire" type="Button" parent="VBox/Zayac"]
+text = "Подписать"
+
+[node name="Ramzes" type="HBoxContainer" parent="VBox"]
+[node name="LabelName" type="Label" parent="VBox/Ramzes"]
+text = "Ramzes (Carry) | Рейтинг: 82 | З/п: $500"
+
+[node name="ButtonHire" type="Button" parent="VBox/Ramzes"]
+text = "Подписать"
+
+[node name="No[o]ne" type="HBoxContainer" parent="VBox"]
+[node name="LabelName" type="Label" parent="VBox/No[o]ne"]
+text = "No[o]ne (Mid) | Рейтинг: 80 | З/п: $470"
+
+[node name="ButtonHire" type="Button" parent="VBox/No[o]ne"]
+text = "Подписать"
+
+[node name="Save-" type="HBoxContainer" parent="VBox"]
+[node name="LabelName" type="Label" parent="VBox/Save-"]
+text = "Save- (Support) | Рейтинг: 76 | З/п: $360"
+
+[node name="ButtonHire" type="Button" parent="VBox/Save-"]
+text = "Подписать"
